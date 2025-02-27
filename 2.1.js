@@ -1,4 +1,4 @@
-let age = Number(window.prompt("Inscris ton age"));
+let age = Number(prompt("Inscris ton age"));
 
 if (age >= 18) {
     console.log('Vous êtes majeur');
