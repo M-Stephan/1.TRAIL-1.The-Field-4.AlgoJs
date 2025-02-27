@@ -3,6 +3,7 @@ const prompt = require('prompt-sync')();
 let min = Number(prompt("Inscris un nombre minimum: "));
 let max = Number(prompt("Inscris un nombre maximum: "));
 let current = Number(prompt("Inscris un nombre compris entre le min et le max: "));
+
 if (min > max) {
     console.log("Vous n'avez pas compris les consignes.");
     process.exit();
