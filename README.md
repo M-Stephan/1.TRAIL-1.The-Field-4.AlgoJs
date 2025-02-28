@@ -1,4 +1,5 @@
 # 4.AlgoJs
+
 ### Author : ``Stéphan``
-### Language : ``Javascript``
+### Code Language : ``Javascript``
 
