@@ -14,13 +14,13 @@ const rand = Math.random();
 
 /**
  * 
- * @param {string} inputAr - Tableau contenant des chaines de caractères ( dans ce cas le tableau des etudiants wozniak)
+ * @param {string[]} inputAr - Tableau contenant des chaines de caractères ( dans ce cas le tableau des etudiants wozniak)
  * @param {number} n - renvoie un nombre aléatoire entre 1 et la longueur du tableau avec length
  * 
  */
 function pickLearner(inputAr, n) {
-    /** @description remplace la variable n pour qu'elle renvoie un nombre a partir de 1 et se terminant au nombre d'éléments dans la liste (ici 11) */
-    n = Math.floor(n * inputAr.length + 1) + 1;
+    /** @description remplace la variable n pour qu'elle renvoie un nombre a partir de 1 et se terminant au nombre d'éléments dans la liste (ici 11 éléments) */
+    n = Math.floor(n * inputAr.length) + 1;
     /** @description debugging pour desactiver mettez la valeur de `debug` sur false */
     if (debug) {
         console.log(n);
