@@ -1,0 +1,22 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "Package prompt-sync",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndc-studio/algo-js.git"
+  },
+  "author": "NDC-Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndc-studio/algo-js/issues"
+  },
+  "homepage": "https://github.com/ndc-studio/algo-js#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
