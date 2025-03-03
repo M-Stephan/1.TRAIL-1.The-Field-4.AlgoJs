@@ -89,6 +89,7 @@ console.log(JSON.stringify(tvSerie, null, 2));
  * 
  * @fileoverview -- Fonction permettant de créer un nouvel array en mélangeant les éléments  algorythme Fisher-Yates (ou Knuth Shuffle)
  * @see {@link https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array}
+ * @see {@link https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#JavaScript_implementation} -- ajout du deuxieme lien de recherche
  * 
  */
 
