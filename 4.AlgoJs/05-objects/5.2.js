@@ -79,10 +79,35 @@ function askTvSerie(name, years_product, members_name) {
 /** @description -- Appel de la fonction createTvSeries() */
 createTvSeries();
 
-/** @description -- Création d'un nouvel objet grace a la fonction de construction */
+/** @var {object} -- Création d'un nouvel objet grace a la fonction de construction askTvSerie(name, years_product, members_name)*/
 let tvSerie = new askTvSerie(serie_name, serie_year, product_names);
 
 /** @description -- Affiche le résultat sons forme JSON dans le terminal grace a JSON.stringify() */
 console.log(JSON.stringify(tvSerie, null, 2));
 
-/** @description Exportation des fonctions avec module.export */
+/**
+ * 
+ * @fileoverview -- Fonction permettant de créer un nouvel array en mélangeant les éléments  algorythme Fisher-Yates (ou Knuth Shuffle)
+ * @see {@link https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array}
+ * 
+ */
+
+/**
+ * 
+ * @param {object} tv_serie -- Objet de serie télévisée comprenant "name, years_product & members_name"
+ * @returns {string[]} -- le `array` copy_array
+ * @var {string[]} copy_array -- Crée une copie du `array` member_name
+ * @const {number} j -- variable contenant un nombre au hazard sur la longueur du `array`
+ * 
+ */
+function randomizeCast(tv_serie) {
+    let copy_array = [...tv_serie.members_name];
+    for (let i = copy_array.length -1; i >= 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy_array[i], copy_array[j]] = [copy_array[j], copy_array[i]];
+    }
+    return copy_array;
+}
+/** @var {string[]} randomized_array-- variable pour contenir le nouvel `array` */
+let randomized_array = randomizeCast(tvSerie);
+console.log(randomized_array);
